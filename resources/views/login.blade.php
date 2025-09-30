@@ -18,7 +18,7 @@
 
         <div class="w-2/3 p-8 flex flex-col justify-center">
             <h1 class="text-2xl font-bold text-gray-800 mb-6">Login Pokémon</h1>
-            <form class="space-y-4" method="post" action="index.html">
+            <form class="space-y-4" method="post" action="{{ route('pokemon.index') }}">
                 <div>
                     <label for="user-email" class="block text-sm font-medium text-gray-700">Email</label>
                     <input type="email" id="user-email" name="n_user-email" class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 p-2" placeholder="ash@pallet.com" required>
@@ -32,8 +32,8 @@
                 <button type="submit" class="w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-red-700 transition">
           Entrar
         </button>
-                <a href="register.html" class=" flex justify-center text-black text-center">cadastrar-se</a>
-                <a href="index.html" class=" flex justify-center text-black text-center">voltar</a>
+                <a href="{{ route('user.create') }}" class=" flex justify-center text-black text-center">cadastrar-se</a>
+                <a href="{{ route('pokemon.index') }} " class=" flex justify-center text-black text-center">voltar</a>
             </form>
         </div>
     </div>

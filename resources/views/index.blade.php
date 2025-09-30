@@ -22,21 +22,21 @@
             <input class="text-black  text-1xl font font-bold p-1 ml-1 outline-none" maxlength="24" placeholder="Barra de busca..."></input>
         </h2>
         <div class="flex space-x-4 ml-4">
-            <a href="list.html">
+            <a href="{{ route('team.index') }}">
                 <button class="bg-blue-500 text-white rounded-[6px] p-3 cursor-pointer">Lista de Times</button>
             </a>
-            <a href="picklist.html">
+            <a href="{{ route('team.create') }}">
                 <button class="bg-blue-500 text-white rounded-[6px] p-3 cursor-pointer">Criar Time</button>
             </a>
-            <a href="login.html">
+            <a href="{{ route('user.login') }}">
                 <button class="bg-blue-500 text-white rounded-[6px] p-3 cursor-pointer">Fazer Login</button>
             </a>
-            <a href="register.html">
+            <a href="{{ route('user.create') }}">
                 <button class="bg-blue-500 text-white rounded-[6px] p-3 cursor-pointer">Criar Conta</button>
             </a>
         </div>
         <section class=" p-4 grid grid-cols-3 gap-10 ">
-            <a href="status.html">
+            <a href="{{ route('pokemon.show', 0) }}">
                 <article class=" bg-white ">
                     <article class="bg-gray-300 p-15 rounded border-l-r-4  text-white ">
                         <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png " alt="bulbasaur ">

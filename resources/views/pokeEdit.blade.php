@@ -31,7 +31,7 @@
             </article>
             <article class="bg-white flex p-2 w-full grid grid-cols-3 justify-center items-center text-center">
                 <button class="bg-blue-500 text-white rounded-l-[6px] p-2 cursor-pointer">Salvar</button>
-                <a href="picklist.html" class="bg-blue-500 text-white  p-2 cursor-pointer">Cancelar</a>
+                <a href="{{ route ('team.create') }}" class="bg-blue-500 text-white  p-2 cursor-pointer">Cancelar</a>
                 <button class="bg-blue-500 text-white rounded-r-[6px] p-2 cursor-pointer">Remover Pokémon</button>
             </article>
 

@@ -18,7 +18,7 @@
 
         <div class="w-2/3 p-8 flex flex-col justify-center">
             <h1 class="text-2xl font-bold text-gray-800 mb-6">Criar Conta Pokémon</h1>
-            <form class="space-y-4" method="post" action="index.html">
+            <form class="space-y-4" method="post" action="{{ route('pokemon.index') }}">
                 <div>
                     <label for="username" class="block text-sm font-medium text-gray-700">Name</label>
                     <input type="text" id="username" name="n-username" class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-red-500 focus:border-red-500 p-2" placeholder="Ash Ketchum" required>
@@ -42,8 +42,8 @@
                 <button type="submit" class="w-full bg-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-red-700 transition">
           Entrar
         </button>
-                <a href="login.html" class=" flex justify-center text-black text-center">Já tem uma conta? Faça login</a>
-                <a href="index.html" class=" flex justify-center text-black text-center">voltar</a>
+                <a href="{{ route('user.login') }}" class=" flex justify-center text-black text-center">Já tem uma conta? Faça login</a>
+                <a href="{{ route('pokemon.index') }}" class=" flex justify-center text-black text-center">voltar</a>
             </form>
         </div>
     </div>

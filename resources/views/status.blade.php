@@ -11,7 +11,7 @@
 
 <body class="m-8" background="./img/pokeFundo.jpg">
     <main>
-        <a href="index.html">
+        <a href="{{ route ('pokemon.index') }}">
             <h1 class="text-center text-2xl font-bold bg-blue-500 text-white rounded-[6px] p-3 m-8">RETORNAR PARA A POKEDEX</h1>
         </a>
         <article class="flex bg-white p-10 m-8 rounded border-l-r-4 grid grid-cols-2 text-white ">

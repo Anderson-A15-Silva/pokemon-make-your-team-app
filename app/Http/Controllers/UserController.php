@@ -3,8 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\View\View;
+
 
 class UserController extends Controller
 {
-    //
+    public function index(Request $request): View{
+        return view('login');
+    }
+
+    public function create(): View{
+        return view('register');
+    }
 }

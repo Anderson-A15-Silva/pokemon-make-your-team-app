@@ -30,7 +30,7 @@
                 <p class="font-bold text-black text-2xl "> Bulbasaur </p>
                 <spam class="text-black bg-green-400 rounded p-1 pl-10 pr-10 m-1 "> Grass </spam>
                 <spam class="text-white bg-purple-500 rounded p-1 pl-10 pr-10 m-1 "> Poison </spam>
-                <a href="builder.html">
+                <a href="{{ route('pokemon.create') }}">
                     <button class="bg-blue-500 text-white rounded p-1 pl-10 pr-10 cursor-pointer">Adicionar</button>
                 </a>
             </article>
