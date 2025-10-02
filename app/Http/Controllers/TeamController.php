@@ -7,6 +7,12 @@ use Illuminate\View\View;
 
 class TeamController extends Controller
 {
+
+    public function __construct(private PokemonRepository $repository) {
+        // Middleware can be added here if needed
+        // For example, $this->middleware('auth');
+    }
+
     public function index(Request $request): View {
         return view('list');
     }
@@ -22,4 +28,7 @@ class TeamController extends Controller
     public function edit(): View {
         return view('teamEdit');
     }
+
+    // Validation functions here
+    // Example: function store (Request $request): Redirect Response { ... }
 }

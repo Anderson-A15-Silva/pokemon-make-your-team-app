@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pokédex | Criar Descrição</title>
-    <link rel="icon" href="./img/pokeIcon.png">
+    <link rel="icon" href="../public/img/pokeIcon.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -30,8 +30,8 @@
                 </article>
             </article>
             <article class="bg-white flex p-2 w-full grid grid-cols-2 justify-center items-center text-center">
-                <a href="{{ route('pokemon.index') }}"> <button class="bg-blue-500 text-white rounded-l-[6px] p-2 cursor-pointer">Salvar</button> </a
-                <a href="{{ route('pokemon.index') }}" class="bg-blue-500 text-white rounded-r-[6px] p-2 cursor-pointer">Cancelar</a>
+                <button class="bg-blue-500 text-white rounded-l-[6px] p-2 cursor-pointer">Salvar</button>
+                <a href="{{ route('team.create') }}" class="bg-blue-500 text-white rounded-r-[6px] p-2 cursor-pointer">Cancelar</a>
             </article>
 
         </article>

@@ -12,7 +12,7 @@
 <body class="m-20 " background="./img/pokeFundo.jpg">
     <main>
         <article class="bg-black flex items-center justify-center text-center text-2xl font-bold text-white h-10">Lista de Times</article>
-        <a href="{{ route('team.create') }}">
+        <a href="picklist.html">
             <button class="bg-blue-500 text-white flex items-center justify-center text-center text-2xl font-bold w-full h-10 cursor-pointer">Criar um Time</button>
         </a>
         <table class="bg-white w-full">
@@ -35,7 +35,7 @@
                     <tr class="bg-white ">
                         <td>Nome do time:</td>
                         <td>Pokémons:</td>
-                        <td class="flex"><a href="{{ route('team.edit', 0) }}">Editar</a><img class=" w-6 h-6 " src="./img/edit-symbol.png " alt="edit-symbol "></td>
+                        <td class="flex"><a href="teamEdit.html">Editar</a><img class=" w-6 h-6 " src="./img/edit-symbol.png " alt="edit-symbol "></td>
                     </tr>
             </tbody>
         </table>
