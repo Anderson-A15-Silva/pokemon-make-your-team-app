@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Pokemon extends Model
 {
     protected $fillable = [
-        'id',
         'name',
         'type1',
         'type2',
@@ -25,6 +24,12 @@ class Pokemon extends Model
         'weight',
         'gender',
         'category',
-        'moves', // This could be a JSON field or a related table in a more complex setup
+        'moves',
+    ];
+
+    protected $casts = [
+        'weaknesses' => 'array',
+        'evolutions' => 'array',
+        'moves' => 'array',
     ];
 }
