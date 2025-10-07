@@ -3,6 +3,7 @@
 namespace App\Http\Repositories;
 
 use App\Models\Team;
+use Illuminate\Database\Eloquent\Collection;
 
 class TeamRepository{
     public function findAll(): Collection{

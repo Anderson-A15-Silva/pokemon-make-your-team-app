@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Repositories;
+
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
