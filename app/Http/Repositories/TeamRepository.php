@@ -10,13 +10,14 @@ class TeamRepository{
         return Team::where('name', 'like', "%$filter%")->get();
     }
 
-    public function create(Team $team): bool{
+    public function create(array $data): bool{
         // return $team->save();
-        return Team::create([data]);
+        return Team::create($data);
     }
 
-    public function edit(Team $team): bool{
-        return $team->save();
+    public function edit(array $data): bool{
+        // return $team->save();
+        return Team::where('id', $id)->update($pokemon);
     }
 
     public function delete(int $id): bool{

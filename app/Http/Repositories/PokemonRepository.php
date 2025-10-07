@@ -19,15 +19,15 @@ class PokemonRepository{
 
     public function create(array $data): Pokemon{
         // return $pokemon->save();
-        return Pokemon::create([data]);
+        return Pokemon::create($data);
     }
 
-    public function edit(Pokemon $pokemon): bool{
-        return $pokemon->save();
+    public function edit(int $id, array $data): bool{
+        // return $pokemon->save();
+        return Pokemon::where('id', $id)->update($data);
     }
 
     public function delete(int $id): bool{
         return Pokemon::destroy($id);
     }
-
 }

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\View\View;
-use Http\Repositories\PokemonRepository;
+use App\Http\Repositories\PokemonRepository;
 
 
 class PokemonController extends Controller
